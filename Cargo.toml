@@ -4,3 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+cargo-contract = { git = "https://github.com/use-ink/cargo-contract", tag = "v6.0.0-alpha.4" }
+contract-extrinsics = { git = "https://github.com/use-ink/cargo-contract", tag = "v6.0.0-alpha.4" }
+ink_env = { git = "https://github.com/use-ink/ink", tag = "v6.0.0-alpha.4", version = "6.0.0-alpha.4", features = ["unstable-hostfn"] }
+subxt = "0.44.0"
+subxt-signer = { version = "0.44.0", features = ["subxt", "sr25519"] }
+tokio = { version = "1", features = ["full"] }
+hex = "0.4"  
+url = { version = "2.5.4", features = ["serde"] }
